@@ -1,0 +1,36 @@
+# OpenEvolve configuration used to reproduce the SOTA bound on the
+# Erdos minimum overlap problem.
+#
+# Backend: any OpenAI-compatible endpoint. This run used Google Gemini
+# (Flash + Pro ensemble). Set the API key via the GEMINI_API_KEY env var:
+#   export GEMINI_API_KEY="..."
+#   python openevolve-run.py initial_program.py evaluator.py --config config.yaml
+#
+# A free alternative is Groq (set api_base to https://api.groq.com/openai/v1
+# and use e.g. openai/gpt-oss-120b); note Groq free tier caps tokens-per-minute,
+# so lower max_tokens (~4096) to fit a single request under the limit.
+
+max_iterations: 200
+checkpoint_interval: 20
+
+llm:
+  api_base: "https://generativelanguage.googleapis.com/v1beta/openai/"
+  api_key: ${GEMINI_API_KEY}
+  # Ensemble: Flash as the workhorse (fast), Pro for occasional smart mutations.
+  models:
+    - name: "gemini-2.5-flash"
+      weight: 0.8
+    - name: "gemini-2.5-pro"
+      weight: 0.2
+  evaluator_models:
+    - name: "gemini-2.5-flash"
+      weight: 1.0
+  temperature: 0.8
+  max_tokens: 8192
+
+database:
+  population_size: 60
+  num_islands: 4
+
+evaluator:
+  timeout: 120
