@@ -2,7 +2,7 @@
 
 An evolutionary LLM coding pipeline ([OpenEvolve](https://github.com/codelion/openevolve),
 the open-source AlphaEvolve) driven with a Gemini Flash + Pro ensemble that
-re-discovers the state-of-the-art **numerical** upper bound for the Erdős
+reproduces the state-of-the-art **numerical** upper bound for the Erdős
 minimum overlap problem — starting from a weak baseline and converging in
 ~10 iterations.
 
@@ -94,6 +94,7 @@ Two Lean 4 formalizations of Erdős problems, merged into Google DeepMind's
 
 ## Credits & license
 
+- Author: Aleksandr Shulgin ([@Sanexxxx777](https://github.com/Sanexxxx777))
 - Evolutionary framework: [OpenEvolve](https://github.com/codelion/openevolve) (Apache-2.0)
 - Problem, `initial_program.py` and `evaluator.py` adapted from
   [google-deepmind/alphaevolve_results](https://github.com/google-deepmind/alphaevolve_results) (Apache-2.0)

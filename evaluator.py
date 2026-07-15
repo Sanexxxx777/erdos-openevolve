@@ -1,15 +1,6 @@
-# ===--------------------------------------------------------------------------------------===#
+# Evaluator for the Erdos minimum overlap problem.
 #
-# This file implements the evaluator for the erdos minimum overlap problem.
-#
-# ===--------------------------------------------------------------------------------------===#
-#
-# Some of the code in this file is adapted from:
-#
-# google-deepmind/alphaevolve_results:
-# Licensed under the Apache License v2.0.
-#
-# ===--------------------------------------------------------------------------------------===#
+# Adapted from google-deepmind/alphaevolve_results (Apache License v2.0).
 
 import sys
 import os
