@@ -94,7 +94,7 @@ Two Lean 4 formalizations of Erdős problems, merged into Google DeepMind's
 
 ## Credits & license
 
-- Author: Aleksandr Shulgin ([@Sanexxxx777](https://github.com/Sanexxxx777))
+- Author: Aleksandr Shulgin ([@Sanexxxx777](https://github.com/Sanexxxx777)) (@Aleksandr_NFA)
 - Evolutionary framework: [OpenEvolve](https://github.com/codelion/openevolve) (Apache-2.0)
 - Problem, `initial_program.py` and `evaluator.py` adapted from
   [google-deepmind/alphaevolve_results](https://github.com/google-deepmind/alphaevolve_results) (Apache-2.0)
