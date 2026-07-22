@@ -1,5 +1,7 @@
 # Erdős Minimum Overlap — reproducing the SOTA bound with OpenEvolve
 
+*На русском: эволюционный пайплайн на базе LLM (OpenEvolve, открытая реализация AlphaEvolve) воспроизводит state-of-the-art численную оценку для проблемы минимального перекрытия Эрдёша — сходится за ~10 итераций, результат независимо подтверждён двумя разными LLM-бэкендами. Это не формальное доказательство, а воспроизведение известной оценки. Детали и команды — ниже, на английском.*
+
 An evolutionary LLM coding pipeline ([OpenEvolve](https://github.com/codelion/openevolve),
 the open-source AlphaEvolve) driven with a Gemini Flash + Pro ensemble that
 reproduces the state-of-the-art **numerical** upper bound for the Erdős
